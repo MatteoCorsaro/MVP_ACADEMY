@@ -1,0 +1,36 @@
+{
+    "Corsy007":{
+        "mid_stats":{
+            "right_corner":{"16-feb-2024":"16/20","13-feb-2024":"18/20"},
+            "right_wing":{"16-feb-2024":"18/20","13-feb-2024":"19/20"},
+            "top_of_the_key":{"16-feb-2024":"19/20","13-feb-2024":"17/20"},
+            "left_wing":{"16-feb-2024":"15/20","13-feb-2024":"12/20"},
+            "left_corner":{"16-feb-2024":"17/20","13-feb-2024":"18/20"}
+        },
+        "tree_stats":{
+            "right_corner": {"16-feb-2024":"12/30","13-feb-2024":"15/20"},
+            "right_wing": {"16-feb-2024":"15/30","13-feb-2024":"16/20"},
+            "top_of_the_key":{"16-feb-2024":"14/30","13-feb-2024":"13/20"},
+            "left_wing":{"16-feb-2024":"17/30","13-feb-2024":"12/20"},
+            "left_corner":{"16-feb-2024":"20/30","13-feb-2024":"7/20"}
+        },
+        "free_throw":{"16-feb-2024":"16/20","13-feb-2024":"34/40"}
+    },
+    "Corski":{
+        "mid_stats":{
+            "right_corner": {},
+            "right_wing": {},
+            "top_of_the_key": {},
+            "left_wing": {},
+            "left_corner":{}
+        },
+        "tree_stats":{
+            "right_corner":{},
+            "right_wing":{},
+            "top_of_the_key":{},
+            "left_wing":{},
+            "left_corner":{}
+        },
+        "free_throw":{}
+    }
+}

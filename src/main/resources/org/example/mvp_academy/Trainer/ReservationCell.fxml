@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="750.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <FontAwesomeIconView glyphName="CALENDAR" size="20" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   <HBox layoutX="41.0" layoutY="7.0" prefHeight="40.0" prefWidth="491.0">
+      <Label fx:id="name_lbl" prefHeight="28.0" prefWidth="133.0" text="Name">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Line endX="-99.70710754394531" endY="39.29289245605469" startX="-99.94975280761719" startY="69.58578491210938" />
+      <Label fx:id="Date_lbl" prefHeight="31.0" prefWidth="189.0" text="Date Of Reservation">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Line endX="-99.70710754394531" endY="39.29289245605469" startX="-99.94975280761719" startY="69.58578491210938" />
+      <Label fx:id="Hour_lbl" prefHeight="31.0" prefWidth="95.0" text="Hour">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Line endX="-99.70710754394531" endY="39.29289245605469" startX="-99.94975280761719" startY="69.58578491210938" />
+   </HBox>
+   <Button fx:id="accept_btn" layoutX="532.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="ACCEPT" />
+   <Button fx:id="delete_btn" layoutX="662.0" layoutY="13.0" mnemonicParsing="false" text="DELETE">
+      <graphic>
+         <FontAwesomeIconView glyphName="WINDOW_CLOSE_ALT" selectionFill="BLACK" size="15" styleClass="cell_container_FontAwesomeIconView" />
+      </graphic>
+   </Button>
+</AnchorPane>

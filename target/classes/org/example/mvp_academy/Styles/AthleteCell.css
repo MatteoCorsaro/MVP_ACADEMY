@@ -1,0 +1,33 @@
+.cell_container{
+    -fx-background-color:#EAC25B;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(tree-pass-box,#B49851,5,0,0,7);
+}
+
+.pren_date_lbl{
+    -fx-fill: #221818;
+}
+
+.cell_container Button{
+    -fx-background-color: linear-gradient(to right, #221818,#3A2626);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA,3,0,0,3);
+    -fx-font-family: "Calibi Light";
+    -fx-text-fill: #FFFFFF;
+}
+.cell_container_FontAwesomeIconView{
+    -fx-fill: #FFFFFF;
+}
+
+.cell_container Button:hover{
+    -fx-cursor: hand
+}
+
+.cell_container HBox{
+    -fx-spacing: 25;
+    -fx-alignment: Center_left;
+}
+.cell_container HBox Label{
+    -fx-font-family: "Calibi Light";
+    -fx-fill: #221818;
+    -fx-font-size: 1.6em;
+}

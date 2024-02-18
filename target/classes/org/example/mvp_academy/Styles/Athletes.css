@@ -1,0 +1,19 @@
+.athletes_container{
+    -fx-background-color: #DDBD69;
+}
+
+.athletes_container Text{
+   -fx-font-size: 1.8em;
+   -fx-fill: #221818;
+   -fx-font-family:"Calibri Light";
+}
+
+.athletes_container .list-view{
+    -fx-background-color: #DDBD69;
+    -fx-border-width: 0;
+}
+
+.athletes_container .list-cell{
+    -fx-background-color: #DDBD69;
+    -fx-padding: 10 0 10 0;
+}

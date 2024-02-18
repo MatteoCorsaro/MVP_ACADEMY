@@ -1,0 +1,11 @@
+
+.cell_container{
+    -fx-background-color:#DDBD69;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(tree-pass-box,#B49851,5,0,0,7);
+}
+
+.pren_date_lbl{
+    -fx-fill: #221818;
+}
+

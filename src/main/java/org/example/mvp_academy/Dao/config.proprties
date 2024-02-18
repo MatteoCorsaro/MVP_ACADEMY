@@ -1,0 +1,5 @@
+USER=postgres
+PASS=Matteoch01
+DB_NAME=MVP_ACADEMY
+
+JASON_FILE=C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\Stats.json
