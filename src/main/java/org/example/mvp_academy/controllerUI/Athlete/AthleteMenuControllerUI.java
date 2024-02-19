@@ -3,8 +3,8 @@ package org.example.mvp_academy.controllerUI.Athlete;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.example.mvp_academy.View.AthleteMenuOption;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.view.AthleteMenuOption;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
 import java.util.ResourceBundle;

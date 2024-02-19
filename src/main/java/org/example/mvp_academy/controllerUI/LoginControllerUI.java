@@ -7,10 +7,10 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import org.example.mvp_academy.Bean.UserBean;
-import org.example.mvp_academy.View.AccountType;
+import org.example.mvp_academy.bean.UserBean;
+import org.example.mvp_academy.view.AccountType;
 import org.example.mvp_academy.controllerAPP.LoginController;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
 import java.util.ResourceBundle;

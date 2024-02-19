@@ -3,13 +3,10 @@ package org.example.mvp_academy.controllerUI.Athlete;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import org.example.mvp_academy.Bean.ReservationBean;
+import org.example.mvp_academy.bean.ReservationBean;
 import org.example.mvp_academy.controllerAPP.Athlete.A_ReservationCellControllerApp;
-import org.example.mvp_academy.other.Singleton;
 
 import java.net.URL;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ResourceBundle;
 
 public class A_ReservationCellControllerUI implements Initializable{

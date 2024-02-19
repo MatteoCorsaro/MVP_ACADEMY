@@ -3,7 +3,7 @@ package org.example.mvp_academy.controllerUI.Trainer;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import org.example.mvp_academy.Bean.AthleteBean;
+import org.example.mvp_academy.bean.AthleteBean;
 
 import java.net.URL;
 import java.util.ResourceBundle;

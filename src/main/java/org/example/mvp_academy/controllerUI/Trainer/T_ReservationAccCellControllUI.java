@@ -3,9 +3,9 @@ package org.example.mvp_academy.controllerUI.Trainer;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import org.example.mvp_academy.Bean.ReservationBean;
+import org.example.mvp_academy.bean.ReservationBean;
 import org.example.mvp_academy.controllerAPP.Trainer.T_ReservationCellControllerApp;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
 import java.util.ResourceBundle;

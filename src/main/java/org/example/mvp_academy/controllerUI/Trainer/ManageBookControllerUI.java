@@ -2,8 +2,8 @@ package org.example.mvp_academy.controllerUI.Trainer;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
-import org.example.mvp_academy.View.T_reservationCellFactory;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.view.T_reservationCellFactory;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
 import java.util.ResourceBundle;

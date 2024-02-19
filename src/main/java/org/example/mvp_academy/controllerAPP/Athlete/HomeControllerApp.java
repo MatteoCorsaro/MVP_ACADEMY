@@ -1,8 +1,8 @@
 package org.example.mvp_academy.controllerAPP.Athlete;
 
-import org.example.mvp_academy.Bean.AthleteBean;
-import org.example.mvp_academy.Bean.UserBean;
-import org.example.mvp_academy.Dao.AthleteDAO;
+import org.example.mvp_academy.bean.AthleteBean;
+import org.example.mvp_academy.bean.UserBean;
+import org.example.mvp_academy.dao.AthleteDAO;
 
 
 public class HomeControllerApp {

@@ -1,14 +1,14 @@
 package org.example.mvp_academy.controllerAPP;
 
 
-import org.example.mvp_academy.Bean.UserBean;
+import org.example.mvp_academy.bean.UserBean;
 //import org.example.mvp_academy.Dao.AthleteDAO;
-import org.example.mvp_academy.Dao.LoginDao;
+import org.example.mvp_academy.dao.LoginDao;
 //import org.example.mvp_academy.Dao.TrainerDAO;
-import org.example.mvp_academy.Model.Athlete;
-import org.example.mvp_academy.Model.Trainer;
-import org.example.mvp_academy.Model.User;
-import org.example.mvp_academy.View.AccountType;
+import org.example.mvp_academy.model.Athlete;
+import org.example.mvp_academy.model.Trainer;
+import org.example.mvp_academy.model.User;
+import org.example.mvp_academy.view.AccountType;
 
 /**
  * Si occupa della gestione del login e della registrazione.

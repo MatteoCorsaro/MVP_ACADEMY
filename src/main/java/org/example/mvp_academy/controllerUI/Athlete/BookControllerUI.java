@@ -1,26 +1,21 @@
 package org.example.mvp_academy.controllerUI.Athlete;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
-import org.example.mvp_academy.Bean.ReservationBean;
-import org.example.mvp_academy.View.A_reservationCellFactory;
-import org.example.mvp_academy.View.AccountType;
+import org.example.mvp_academy.bean.ReservationBean;
+import org.example.mvp_academy.view.A_reservationCellFactory;
 import org.example.mvp_academy.controllerAPP.Athlete.BookControllerApp;
-import org.example.mvp_academy.exceptions.ReservationException;
-import org.example.mvp_academy.other.HOUR;
-import org.example.mvp_academy.other.Singleton;
-import org.example.mvp_academy.other.TRAINER_LIST;
+import org.example.mvp_academy.HOUR;
+import org.example.mvp_academy.Singleton;
+import org.example.mvp_academy.TRAINER_LIST;
 
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.ResourceBundle;
 
 public class BookControllerUI implements Initializable {
@@ -67,12 +62,8 @@ public class BookControllerUI implements Initializable {
         BookControllerApp controllerApp = new BookControllerApp();
         ReservationBean reservationBean = controllerApp.getThisReservation(trainer,date,hour);
         if(controllerApp.savePrenotation(reservationBean)) {
-            //System.out.println("STO QUiiii");
             Singleton.getLoginInstance().addReservation(reservationBean);
             updateListView();
-        }else{
-            //System.out.println("STO QUAAAAA");
-            ReservationException.error();
         }
     }
 

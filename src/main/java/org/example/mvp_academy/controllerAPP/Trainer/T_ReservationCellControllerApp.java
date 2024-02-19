@@ -1,10 +1,9 @@
 package org.example.mvp_academy.controllerAPP.Trainer;
 
-import org.example.mvp_academy.Bean.ReservationBean;
-import org.example.mvp_academy.Dao.ReservationDao;
-import org.example.mvp_academy.Model.Reservation;
-import org.example.mvp_academy.controllerAPP.Athlete.A_ReservationCellControllerApp;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.bean.ReservationBean;
+import org.example.mvp_academy.dao.ReservationDao;
+import org.example.mvp_academy.model.Reservation;
+import org.example.mvp_academy.Singleton;
 
 public class T_ReservationCellControllerApp {
     public String ret_date_reservation(ReservationBean reservation) {

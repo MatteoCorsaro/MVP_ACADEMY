@@ -2,9 +2,9 @@ package org.example.mvp_academy.controllerUI.Athlete;
 
 import javafx.fxml.Initializable;
 import javafx.scene.text.Text;
-import org.example.mvp_academy.Bean.StatsBean;
+import org.example.mvp_academy.bean.StatsBean;
 import org.example.mvp_academy.controllerAPP.Athlete.StatsControllerApp;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
 import java.util.ResourceBundle;

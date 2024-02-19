@@ -3,18 +3,13 @@ package org.example.mvp_academy.controllerUI.Athlete;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import org.example.mvp_academy.Bean.AthleteBean;
-import org.example.mvp_academy.Bean.ReservationBean;
-import org.example.mvp_academy.View.A_reservationCellFactory;
+import org.example.mvp_academy.bean.AthleteBean;
+import org.example.mvp_academy.bean.ReservationBean;
 import org.example.mvp_academy.controllerAPP.Athlete.HomeControllerApp;
-import org.example.mvp_academy.other.Singleton;
+import org.example.mvp_academy.Singleton;
 
 import java.net.URL;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class HomeControllerUI implements Initializable {
@@ -42,9 +37,9 @@ public class HomeControllerUI implements Initializable {
         Pos_lbl.setText(athleteBean.getPosition().toString());
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy");
-        String formattedString = formatter.format(athleteBean.getDate_of_birth());
+        String formattedString = formatter.format(athleteBean.getDateOfBirth());
 
-        if(athleteBean.getDate_of_birth()==null){
+        if(athleteBean.getDateOfBirth()==null){
             Birth_lbl.setText("-----");
         }else {
             Birth_lbl.setText(formattedString);
