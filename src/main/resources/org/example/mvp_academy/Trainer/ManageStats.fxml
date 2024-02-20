@@ -19,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvp_academy.controllerUI.trainer.ManageStatsControllerUI">
+<AnchorPane prefHeight="750.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.progetto.controllerUI.trainer.ManageStatsControllerUI">
     <VBox layoutX="102.0" layoutY="127.0" prefHeight="200.0" prefWidth="597.0">
         <HBox prefHeight="100.0" prefWidth="200.0">
             <Label prefHeight="47.0" prefWidth="160.0" text="Right Corner" textAlignment="CENTER" />
@@ -343,7 +343,7 @@
     </Circle>
     <Line endX="18.0" layoutX="66.0" layoutY="137.0" startX="18.0" startY="180.0" />
     <FontAwesomeIconView glyphName="BAR_CHART" layoutX="817.0" layoutY="35.0" size="25" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
-    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE STATS" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+    <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="MANAGE STATS" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
         <font>
           <Font size="17.0" />
         </font>

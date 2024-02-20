@@ -3,25 +3,25 @@
     -fx-background-color: #DDBD69;
 }
 
-.add_athlete_container Text{
+.add_athlete_container .text{
      -fx-font-size: 1.8em;
      -fx-fill: #221818;
 }
 
-.add_athlete_container VBox{
+.add_athlete_container .vbox{
     -fx-border-color: #221818;
     -fx-padding: 10;
     -fx-stacing: 15;
 }
 
-.add_athlete_container TextField{
+.add_athlete_container .textField{
     -fx-pref-width:250;
     -fx-pref-height:35;
     -fx-background-color: #FFFFFF;
     -fx-font-size: 1.3em;
     -fx-effect: dropshadow(three-pass-box, #AAAAAA,3,0,0,3);
 }
-.add_athlete_container DatePicker{
+.add_athlete_container .DatePicker{
     -fx-pref-width:250;
     -fx-pref-height:35;
     -fx-background-color: #FFFFFF;
@@ -35,7 +35,7 @@
     -fx-pref-width:250;
     -fx-font-size: 1.5em;
     -fx-font-family: "Calibi Light";
-    -fx-text-fill: #FFFFFF;
+
 }
 
 .add_athlete_container Button:hover{

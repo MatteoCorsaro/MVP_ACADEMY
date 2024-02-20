@@ -27,7 +27,7 @@
     -fx-spacing: 15;
 }
 
-.home Text{
+.home .Text{
     -fx-fill: #221818;
 }
 
