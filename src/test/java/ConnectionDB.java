@@ -1,4 +1,4 @@
-import org.example.mvp_academy.exceptions.ExceptionDB;
+import org.example.progetto.exceptions.ExceptionDB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

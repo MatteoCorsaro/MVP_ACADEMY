@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="athletes_container" stylesheets="@../Styles/Athletes.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvp_academy.controllerUI.trainer.ManageBookControllerUI">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="athletes_container" stylesheets="@../Styles/Athletes.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.progetto.controllerUI.trainer.ManageBookControllerUI">
     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE RESERVATION" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
     <ListView fx:id="reservationListview" prefHeight="650.0" prefWidth="800.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="50.0" />
 </AnchorPane>
