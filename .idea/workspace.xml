@@ -5,182 +5,204 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3672d394-0d40-4381-a55a-4d058e3ddf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/trainer/TrainerReservationCellControllerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/secondControllerUI/LoginControlleUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/SingletonSecondView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/athlete/HomeControllerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/secondControllerUI/LoginControllerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/secondControllerUI/athlete/AthleteMenuControllerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/secondControllerUI/trainer/TrainerMenuControllerUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/SecondViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/bean/UserBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/athlete/AthleteReservationCellControllerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/athlete/BookControllerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/athlete/HomeControllerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/athlete/StatsControllerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/trainer/TrainerReservationCellControllerApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/HomeControllerUI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/AthleteDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/TrainerDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/AccountType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/AthleteCellFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/AthleteMenuOption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/AthleteReservationCellFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/TrainerReservationCellFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/ViewFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/HOUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/HOUR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/POS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/POSITION.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/POSITION.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/RESERVATION_STATE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/RESERVATION_STATE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/TRAINER_LIST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/TRAINER_LIST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/AthleteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/AthleteBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/ReservationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/ReservationBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/StatsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/StatsBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/Athlete/A_ReservationCellControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/AthleteReservationCellControllerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/Athlete/BookControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/BookControllerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/Athlete/HomeControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/HomeControllerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/Athlete/StatsControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/StatsControllerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/Trainer/T_ReservationCellControllerApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/A_ReservationCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteReservationCellControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/AthleteControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/AthleteMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteMenuControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/BookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/BookControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/HomeControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/HomeControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Athlete/StatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/StatsControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/ErrorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/ErrorUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/LoginControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/LoginControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/AddAthleteControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/AddAthleteControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/AthleteCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/AthleteCellControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/HomeControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/HomeControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/ManageBookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/ManageBookControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/ManageStatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/ManageStatsControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/T_ReservationAccCellControllUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationAccCellControllUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/T_ReservationCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationCellControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/TrainerControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/Trainer/TrainerMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerMenuControllerUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/AthleteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/AthleteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/ConnectionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/ReservationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/StatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/StatsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/TrainerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/TrainerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/config.proprties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/config.proprties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Athlete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Trainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/A_reservationCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteReservationCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AccountType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AthleteCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AthleteMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteMenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/T_reservationCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/TrainerReservationCellFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/TrainerMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/TrainerMenuOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Athlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Athlete.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/AthleteMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/AthleteMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Booking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Booking.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/ReservationCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Stat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Stat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Error.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Error.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/Ath.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/Ath.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/logoMVP.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/logoMVP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AddAthlete.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AddAthlete.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteCell.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteHome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Athletes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Athletes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Booking.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/ManageStats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/ManageStats.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Stats.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/reservationCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/reservationCell.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/AcceptedReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/AcceptedReservationCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/AthleteCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/AthleteCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ManageBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ManageBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ManageStats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ManageStats.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ReservationCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/Trainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/Trainer.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerAddAthlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerAddAthlete.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/HOUR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/HOUR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/POS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/POS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/POSITION.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/POSITION.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/RESERVATION_STATE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/RESERVATION_STATE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/TRAINER_LIST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/TRAINER_LIST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/AthleteBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/AthleteBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/ReservationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/ReservationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/StatsBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/StatsBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/bean/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/bean/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/AthleteReservationCellControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/athlete/AthleteReservationCellControllerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/BookControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/athlete/BookControllerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/HomeControllerApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/athlete/StatsControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/athlete/StatsControllerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerAPP/trainer/TrainerReservationCellControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerAPP/trainer/TrainerReservationCellControllerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/ErrorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/ErrorUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/LoginControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/LoginControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/AthleteControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/AthleteMenuControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/AthleteReservationCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/AthleteReservationCellControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/BookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/BookControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/HomeControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/HomeControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/athlete/StatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/athlete/StatsControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/AddAthleteControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/AddAthleteControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/AthleteCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/AthleteCellControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/HomeControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/HomeControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/ManageBookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/ManageBookControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/ManageStatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/ManageStatsControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/TrainerControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/TrainerMenuControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationAccCellControllUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/TrainerReservationAccCellControllUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationCellControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/controllerUI/trainer/TrainerReservationCellControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/AthleteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/AthleteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/ConnectionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/ReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/StatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/StatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/TrainerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/TrainerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/dao/config.proprties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/dao/config.proprties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Athlete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Stats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/Trainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/secondControllerUI/LoginControlleUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AccountType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AccountType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AthleteCellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AthleteMenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/AthleteReservationCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/AthleteReservationCellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/TrainerMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/TrainerMenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/TrainerReservationCellFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/TrainerReservationCellFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvpAcademy/view/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvp_academy/view/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Athlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Athlete.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/AthleteMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/AthleteMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Booking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Booking.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/ReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Athlete/Stat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Stat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Error.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Error.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/Ath.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/Ath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Images/logoMVP.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Images/logoMVP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AddAthlete.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AddAthlete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteCell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteHome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/AthleteMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Athletes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Athletes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/ManageStats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/ManageStats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/Stats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Styles/reservationCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/reservationCell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/AcceptedReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/AcceptedReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/AthleteCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/AthleteCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ManageBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ManageBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ManageStats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ManageStats.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/Trainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/Trainer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerAddAthlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerAddAthlete.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvpAcademy/Trainer/TrainerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConnectionDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestStatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestStatsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Athlete.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/AthleteMenu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Booking.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/ReservationCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Stat.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Bean/AthleteBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Bean/ReservationBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Bean/StatsBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Bean/UserBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/AthleteDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/ConnectionDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/LoginDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/ReservationDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/StatsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Dao/TrainerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Error.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/HOUR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/Ath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/logoMVP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Athlete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Reservation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Stat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Stats$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Stats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/Trainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/POS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/POSITION.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/RESERVATION_STATE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Singleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AddAthlete.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteHome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteMenu.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Athletes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Booking.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/ManageStats.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Stats.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/reservationCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/TRAINER_LIST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/AcceptedReservationCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/AthleteCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ManageBook.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ManageStats.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ReservationCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/Trainer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerAddAthlete.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerHome.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerMenu.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/A_reservationCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/AccountType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/AthleteCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/AthleteMenuOption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/T_reservationCellFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/TrainerMenuOption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/View/ViewFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/Athlete/A_ReservationCellControllerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/Athlete/BookControllerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/Athlete/HomeControllerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/Athlete/StatsControllerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerAPP/Trainer/T_ReservationCellControllerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/A_ReservationCellControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/AthleteControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/AthleteMenuControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/BookControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/HomeControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Athlete/StatsControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/ErrorUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/LoginControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/AddAthleteControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/AthleteCellControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/HomeControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/ManageBookControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/ManageStatsControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/T_ReservationAccCellControllUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/T_ReservationCellControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/TrainerControllerUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/Trainer/TrainerMenuControllerUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/Athlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Athlete.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/AthleteMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/AthleteMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/Booking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Booking.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/ReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Athlete/Stat.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Athlete/Stat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Error.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Error.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/HOUR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/HOUR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Images/Ath.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/Ath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Images/logoMVP.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Images/logoMVP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/POS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/POS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/POSITION.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/POSITION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/RESERVATION_STATE.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/RESERVATION_STATE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/AddAthlete.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AddAthlete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/AthleteCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteCell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/AthleteHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Styles/AthleteHome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/AthleteMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/AthleteMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/Athletes.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Athletes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/Booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/ManageStats.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/ManageStats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/Stats.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/Stats.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Styles/reservationCell.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Styles/reservationCell.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/TRAINER_LIST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/TRAINER_LIST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/AcceptedReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/AcceptedReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/AthleteCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/AthleteCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/ManageBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/ManageBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/ManageStats.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ManageStats.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/ReservationCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/ReservationCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/Trainer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/Trainer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/TrainerAddAthlete.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Trainer/TrainerAddAthlete.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/TrainerHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/Trainer/TrainerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/Trainer/TrainerMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/bean/AthleteBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/bean/AthleteBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/bean/ReservationBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/bean/ReservationBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/bean/StatsBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/bean/StatsBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/bean/UserBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/athlete/AthleteReservationCellControllerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/athlete/BookControllerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/athlete/HomeControllerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/athlete/StatsControllerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerAPP/trainer/TrainerReservationCellControllerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/ErrorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/ErrorUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/LoginControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/LoginControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/AthleteControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/AthleteControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/AthleteMenuControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/AthleteMenuControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/AthleteReservationCellControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/AthleteReservationCellControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/BookControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/BookControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/HomeControllerUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/athlete/StatsControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/athlete/StatsControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/AddAthleteControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/AddAthleteControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/AthleteCellControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/AthleteCellControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/HomeControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/HomeControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/ManageBookControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/ManageBookControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/ManageStatsControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/ManageStatsControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/TrainerControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/TrainerControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/TrainerMenuControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/TrainerMenuControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationAccCellControllUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/TrainerReservationAccCellControllUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/controllerUI/trainer/TrainerReservationCellControllerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/controllerUI/trainer/TrainerReservationCellControllerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/AthleteDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/ConnectionDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/ConnectionDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/LoginDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/LoginDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/ReservationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/ReservationDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/StatsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/dao/StatsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/dao/TrainerDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Athlete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Athlete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Reservation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Stat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Stats$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Stats$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Stats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Stats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/Trainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/Trainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/secondControllerUI/LoginControlleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/secondControllerUI/LoginControlleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/AccountType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/AthleteCellFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/AthleteMenuOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/AthleteReservationCellFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/TrainerMenuOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/mvp_academy/view/TrainerMenuOption.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/TrainerReservationCellFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/mvpAcademy/view/ViewFactory.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,25 +248,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConnectionDB.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestFileManager.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestStatsDAO.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matteo/OneDrive/Desktop/Progetto-ISPW-main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.App.executor": "Run",
+    "Application.ConnectionDB.executor": "Run",
+    "Application.TestFileManager.executor": "Run",
+    "Application.TestStatsDAO.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "my-new-branch",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Matteo/OneDrive/Desktop/Progetto/5 Code/untitled",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\src\main\java\data" />

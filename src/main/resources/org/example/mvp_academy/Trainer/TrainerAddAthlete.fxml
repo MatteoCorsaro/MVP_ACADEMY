@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="add_athlete_container" stylesheets="@../Styles/AddAthlete.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvp_academy.controllerUI.trainer.AddAthleteControllerUI">
+   <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Athlete Account" wrappingWidth="340.736328125" />
+   <VBox fillWidth="false" layoutX="23.0" layoutY="48.0" prefHeight="684.0" prefWidth="273.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="48.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName:" />
+      <TextField fx:id="fNameFld" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+      <TextField fx:id="lNameFld" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+      <TextField fx:id="passwordFld" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <TextField fx:id="usernameFld" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Of Birth:" />
+      <DatePicker fx:id="birthPicker" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Position:" />
+      <ChoiceBox prefHeight="33.0" prefWidth="254.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team:" />
+      <TextField fx:id="teamFld" />
+      <Button fx:id="addAthleteBtn" mnemonicParsing="false" text="Add New Athlete" translateY="20.0" />
+      <Text fx:id="errorLbl" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="error_lbl" text="Error:" translateY="20.0" />
+   </VBox>
+</AnchorPane>
