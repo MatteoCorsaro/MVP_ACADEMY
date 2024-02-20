@@ -8,11 +8,14 @@ module org.example.mvp_academy {
     requires org.json;
 
 
-    opens org.example.mvp_academy to javafx.fxml;
-    exports org.example.mvp_academy;
-    exports org.example.mvp_academy.controllerUI;
-    exports org.example.mvp_academy.controllerUI.Trainer;
-    exports org.example.mvp_academy.controllerUI.Athlete;
-    exports org.example.mvp_academy.model;
-    exports org.example.mvp_academy.view;
+    opens org.example.mvpAcademy to javafx.fxml;
+    opens org.example.mvpAcademy.controllerUI to javafx.fxml;
+    opens org.example.mvpAcademy.controllerUI.athlete to javafx.fxml;
+    opens org.example.mvpAcademy.controllerUI.trainer to javafx.fxml;
+    exports org.example.mvpAcademy;
+    exports org.example.mvpAcademy.controllerUI;
+    exports org.example.mvpAcademy.controllerUI.trainer;
+    exports org.example.mvpAcademy.controllerUI.athlete;
+    exports org.example.mvpAcademy.model;
+    exports org.example.mvpAcademy.view;
 }

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="main_stats_container" stylesheets="@../Styles/Stats.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvpAcademy.controllerUI.athlete.StatsControllerUI">
+   <VBox layoutX="163.0" layoutY="127.0" prefHeight="200.0" prefWidth="597.0">
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <Label prefHeight="47.0" prefWidth="160.0" text="Right Corner" textAlignment="CENTER" />
+         <Text fx:id="rcMd" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="rcMdp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%" wrappingWidth="110.0">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Text>
+         <Text fx:id="rcT" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="rcTp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <Label prefHeight="43.0" prefWidth="160.0" text="Right Wing " />
+         <Text fx:id="rwMd" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="rwMdp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="rwT" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="rwTp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <Label prefHeight="45.0" prefWidth="160.0" text="Top of The Key" />
+         <Text fx:id="keyM" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="keyMp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="keyT" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="keyTp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <Label prefHeight="43.0" prefWidth="160.0" text="Left Wing" />
+         <Text fx:id="lwMd" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lwMdp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lwT" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lwTp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <Label prefHeight="47.0" prefWidth="160.0" text="Left Corner" />
+         <Text fx:id="lcMd" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lcMdp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lcT" strokeType="OUTSIDE" strokeWidth="0.0" text="--/--" wrappingWidth="110.0">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+         <Text fx:id="lcTp" strokeType="OUTSIDE" strokeWidth="0.0" text="--%">
+            <font>
+               <Font size="25.0" />
+            </font>
+         </Text>
+      </HBox>
+   </VBox>
+   <Text layoutX="369.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MID RANGE" />
+   <Text layoutX="589.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THREE POINT" />
+   <ImageView fitHeight="365.0" fitWidth="623.0" layoutX="200.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../Images/86-868949_basketball-court-lines-png-clip-art-free-basketball.png" />
+   </ImageView>
+   <Text layoutX="500.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="22.13671875" />
+   <Circle layoutX="511.0" layoutY="350.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="809.0" layoutY="683.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="220.0" layoutY="683.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="685.0" layoutY="683.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="340.0" layoutY="683.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="645.0" layoutY="472.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="381.0" layoutY="472.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="320.0" layoutY="409.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="705.0" layoutY="409.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="511.0" layoutY="472.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Circle layoutX="511.0" layoutY="418.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+      <fill>
+         <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.4954666495323181" blue="0.11999999731779099" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </fill>
+   </Circle>
+   <Line endX="18.0" layoutX="128.0" layoutY="138.0" startX="18.0" startY="180.0" />
+   <FontAwesomeIconView glyphName="BAR_CHART" layoutX="817.0" layoutY="35.0" size="25" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+</AnchorPane>

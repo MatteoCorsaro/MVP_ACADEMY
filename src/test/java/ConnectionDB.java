@@ -1,10 +1,8 @@
-import org.example.mvp_academy.exceptions.ExceptionDB;
+import org.example.mvpAcademy.exceptions.ExceptionDB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.time.Instant;
-import java.time.LocalDate;
 
 public class ConnectionDB {
     public static void main(String[] args){

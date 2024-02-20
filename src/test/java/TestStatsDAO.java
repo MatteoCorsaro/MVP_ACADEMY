@@ -1,5 +1,5 @@
-import org.example.mvp_academy.dao.StatsDAO;
-import org.example.mvp_academy.model.Stats;
+import org.example.mvpAcademy.dao.StatsDAO;
+import org.example.mvpAcademy.model.Stats;
 
 public class TestStatsDAO {
 
