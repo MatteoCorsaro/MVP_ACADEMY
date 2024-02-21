@@ -11,7 +11,7 @@ public class MyException {
     private String userInterface;
     Logger logger = Logger.getLogger(getClass().getName());
 
-    public static MyException getInstance() {
+    public static synchronized MyException getInstance() {
         if (instance == null) {
             instance = new MyException();
         }
@@ -19,7 +19,7 @@ public class MyException {
     }
 
     public void alreadyExist() {
-        if(userInterface=="CLI"){
+        if(userInterface.equals("CLI")){
             logger.info("ESISTE GIA' UNA PRENOTAZIONE CON QUESTA DATA E QUESTO ORARIO");
         }else{
             Singleton.getLoginInstance().setErrorMessage("ESISTE GIA' UNA PRENOTAZIONE CON QUESTA DATA E QUESTO ORARIO");
@@ -29,7 +29,7 @@ public class MyException {
     }
 
     public void pastDay() {
-        if(userInterface=="CLI"){
+        if(userInterface.equals("CLI")){
             logger.info("NON PUOI PRENOTARE IN UN GIORNO PASSATO");
         }else{
             Singleton.getLoginInstance().setErrorMessage("NON PUOI PRENOTARE IN UN GIORNO PASSATO");
@@ -38,7 +38,7 @@ public class MyException {
     }
 
     public void exceptionDB(Exception e) {
-        if(userInterface=="CLI"){
+        if(userInterface.equals("CLI")){
             logger.info(e.getMessage());
         }else {
             Singleton.getLoginInstance().setErrorMessage(e.getMessage());

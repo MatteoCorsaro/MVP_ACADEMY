@@ -28,7 +28,6 @@ public class ReservationDao {
             if (statement==null){
                 return;
             }
-            System.out.println("ROW INSERTER");
             statement.executeUpdate(query);
             statement.close();
         }catch (SQLException e){

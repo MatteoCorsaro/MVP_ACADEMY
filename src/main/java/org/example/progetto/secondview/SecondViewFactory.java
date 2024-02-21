@@ -66,21 +66,18 @@ public class SecondViewFactory {
 
         Scanner input = new Scanner(System.in);
 
-        label:
         while (true) {
             printer.println("Please, make a choice(enter a number between 1 and 2): ");
 
             choice = input.nextInt();
-            switch (choice) {
-                case 1:
-                    SingletonSecondView.getLoginInstance().getViewFactory().showAthleteMenu();
-                    break label;
-                case 2:
-                    SingletonSecondView.getLoginInstance().getViewFactory().logout();
-                    break label;
-                default:
-                    printer.println("Not valid choice!");
-                    break;
+            if (choice == 1) {
+                SingletonSecondView.getLoginInstance().getViewFactory().showAthleteMenu();
+                break;
+            } else if (choice == 2) {
+                SingletonSecondView.getLoginInstance().getViewFactory().logout();
+                break;
+            } else {
+                printer.println("Not valid choice!");
             }
         }
     }
@@ -120,21 +117,18 @@ public class SecondViewFactory {
 
         Scanner input = new Scanner(System.in);
 
-        label:
         while (true) {
             printer.println("Please, make a choice(enter a number between 1 and 2): ");
 
             choice = input.nextInt();
-            switch (choice) {
-                case 1:
-                    SingletonSecondView.getLoginInstance().getViewFactory().showTrainerMenu();
-                    break label;
-                case 2:
-                    SingletonSecondView.getLoginInstance().getViewFactory().logout();
-                    break label;
-                default:
-                    printer.println("Not valid choice!");
-                    break;
+            if (choice == 1) {
+                SingletonSecondView.getLoginInstance().getViewFactory().showTrainerMenu();
+                break;
+            } else if (choice == 2) {
+                SingletonSecondView.getLoginInstance().getViewFactory().logout();
+                break;
+            } else {
+                printer.println("Not valid choice!");
             }
         }
     }

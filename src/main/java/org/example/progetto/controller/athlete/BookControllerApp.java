@@ -9,10 +9,6 @@ public class BookControllerApp {
 
     public ReservationBean getThisReservation(String trainer, String date, String hour, String user) {
         ReservationBean bean = new ReservationBean(date,trainer,hour, user);
-
-        System.out.println(bean.getHour());
-        System.out.println(bean.getDate());
-        System.out.println(bean.getTrainer());
         return bean;
     }
 

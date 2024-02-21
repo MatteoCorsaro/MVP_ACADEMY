@@ -2,7 +2,6 @@ package org.example.progetto.bean;
 
 import org.example.progetto.model.Reservation;
 import org.example.progetto.RESERVATION_STATE;
-import org.example.progetto.Singleton;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
