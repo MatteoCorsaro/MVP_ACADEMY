@@ -67,7 +67,6 @@ public class ViewFactory {
         try{
             scene = new Scene(loader.load());
         }catch (Exception e) {
-            e.printStackTrace();
             Singleton.getLoginInstance().setErrorMessage(e.getMessage());
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();
         }
