@@ -20,7 +20,7 @@ public class MyException {
 
     public void alreadyExist() {
         if(userInterface.equals("CLI")){
-            logger.info("ESISTE GIA' UNA PRENOTAZIONE CON QUESTA DATA E QUESTO ORARIO");
+            logger.info("ERRORE: ESISTE GIA' UNA PRENOTAZIONE CON QUESTA DATA E QUESTO ORARIO");
         }else{
             Singleton.getLoginInstance().setErrorMessage("ESISTE GIA' UNA PRENOTAZIONE CON QUESTA DATA E QUESTO ORARIO");
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();
@@ -30,7 +30,7 @@ public class MyException {
 
     public void pastDay() {
         if(userInterface.equals("CLI")){
-            logger.info("NON PUOI PRENOTARE IN UN GIORNO PASSATO");
+            logger.info("ERRORE: NON PUOI PRENOTARE IN UN GIORNO PASSATO");
         }else{
             Singleton.getLoginInstance().setErrorMessage("NON PUOI PRENOTARE IN UN GIORNO PASSATO");
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();

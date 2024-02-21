@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3672d394-0d40-4381-a55a-4d058e3ddf3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/exception/MyException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "my-new-branch",
+    "git-widget-placeholder": "92566b2a",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Matteo/OneDrive/Desktop/Progetto/5 Code/untitled",
     "project.structure.last.edited": "Libraries",
@@ -74,6 +74,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\src\main\java" />
+      <recent name="C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\src\main\java\org\example\progetto" />
       <recent name="C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\src\main\java\data" />
       <recent name="C:\Users\Matteo\OneDrive\Desktop\Progetto\5 Code\MVP_ACADEMY\src\main\resources\org\example\mvp_academy" />
     </key>
