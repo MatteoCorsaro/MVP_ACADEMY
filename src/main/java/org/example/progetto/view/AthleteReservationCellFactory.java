@@ -4,7 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ListCell;
 import org.example.progetto.Singleton;
 import org.example.progetto.bean.ReservationBean;
-import org.example.progetto.controllerUI.athlete.AthleteReservationCellControllerUI;
+import org.example.progetto.controllerui.athlete.AthleteReservationCellControllerUI;
 
 public class AthleteReservationCellFactory extends ListCell<ReservationBean>{
     @Override

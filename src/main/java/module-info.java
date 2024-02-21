@@ -9,13 +9,13 @@ module org.example.mvp_academy {
 
 
     opens org.example.progetto to javafx.fxml;
-    opens org.example.progetto.controllerUI to javafx.fxml;
-    opens org.example.progetto.controllerUI.athlete to javafx.fxml;
-    opens org.example.progetto.controllerUI.trainer to javafx.fxml;
+    opens org.example.progetto.controllerui to javafx.fxml;
+    opens org.example.progetto.controllerui.athlete to javafx.fxml;
+    opens org.example.progetto.controllerui.trainer to javafx.fxml;
     exports org.example.progetto;
-    exports org.example.progetto.controllerUI;
-    exports org.example.progetto.controllerUI.trainer;
-    exports org.example.progetto.controllerUI.athlete;
+    exports org.example.progetto.controllerui;
+    exports org.example.progetto.controllerui.trainer;
+    exports org.example.progetto.controllerui.athlete;
     exports org.example.progetto.model;
     exports org.example.progetto.view;
 }

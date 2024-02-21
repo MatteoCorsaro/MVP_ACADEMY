@@ -8,9 +8,9 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.example.progetto.Singleton;
-import org.example.progetto.controllerUI.athlete.AthleteControllerUI;
-import org.example.progetto.controllerUI.ErrorUI;
-import org.example.progetto.controllerUI.trainer.TrainerControllerUI;
+import org.example.progetto.controllerui.athlete.AthleteControllerUI;
+import org.example.progetto.controllerui.ErrorUI;
+import org.example.progetto.controllerui.trainer.TrainerControllerUI;
 
 import java.util.Objects;
 

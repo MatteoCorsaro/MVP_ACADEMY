@@ -3,8 +3,8 @@ package org.example.progetto.view;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ListCell;
 import org.example.progetto.bean.ReservationBean;
-import org.example.progetto.controllerUI.trainer.TrainerReservationAccCellControllUI;
-import org.example.progetto.controllerUI.trainer.TrainerReservationCellControllerUI;
+import org.example.progetto.controllerui.trainer.TrainerReservationAccCellControllUI;
+import org.example.progetto.controllerui.trainer.TrainerReservationCellControllerUI;
 import org.example.progetto.Singleton;
 
 public class TrainerReservationCellFactory extends ListCell<ReservationBean>{
