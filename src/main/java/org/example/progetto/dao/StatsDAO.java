@@ -47,9 +47,8 @@ public class StatsDAO{
         }
     }
 
-    public static Stats getStatsByUsername(String username) throws Exception {
+    public static Stats getStatsByUsername(String username){
         String strJson=getJSONFromFile("C:\\Users\\Matteo\\OneDrive\\Desktop\\Progetto\\5 Code\\MVP_ACADEMY\\src\\main\\java\\data\\Stats.json");
-        //System.out.println("Sto QUIIII");
         ReservationDao reservationDao = new ReservationDao();
         List<String> allDate = reservationDao.getAllPastDate(username);
         List<Stat> statList= new ArrayList<>();
@@ -77,8 +76,8 @@ public class StatsDAO{
             Stat statLcT = ret_stat(strJson,username,"tree_stats","left_corner",date);
             statList.add(statLcT);
 
-            /*Stat statFT = ret_stat(strJson,username,"free_throw",null,date);
-            statList.add(statFT);*/
+            //Stat statFT = ret_stat(strJson,username,"free_throw",null,date);
+            //statList.add(statFT);
         }
         return new Stats(statList);
     }
@@ -120,7 +119,7 @@ public class StatsDAO{
         return new Stat(position,Integer.parseInt(parts[0]),Integer.parseInt(parts[1]));
     }
 
-    public static StatsBean ret_bean(String user) throws Exception {
+    public static StatsBean ret_bean(String user){
         Stats stats = getStatsByUsername(user);
         return new StatsBean(stats);
     }
