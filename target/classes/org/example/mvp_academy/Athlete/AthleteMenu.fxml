@@ -9,11 +9,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/AthleteMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvp_academy.controllerUI.athlete.AthleteMenuControllerUI">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/AthleteMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.progetto.controllerui.athlete.AthleteMenuControllerUI">
    <AnchorPane prefHeight="730.0" prefWidth="180.0" styleClass="left_container">
       <VBox prefHeight="151.0" prefWidth="200.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <FontAwesomeIconView glyphName="USER" size="50" />
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MVP ACADEMY" />
+         <FontAwesomeIconView glyphName="USER" size="50" styleClass="FontAwesomeIconView" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="MVP ACADEMY" />
          <Line endX="130.0" stroke="#f97c08" />
       </VBox>
       <VBox prefHeight="300.0" prefWidth="180.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
@@ -35,13 +35,12 @@
          <Line endX="130.0" stroke="#f97c08" translateX="10.0" />
          <Button fx:id="logoutBtn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Logout" translateX="20.0">
             <graphic>
-               <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" styleClass="FontAwesomeIconView" />
             </graphic>
          </Button>
       </VBox>
-      <ImageView fitHeight="284.0" fitWidth="216.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true"
-                 AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.6888427734375">
-         <Image url="@../Images/logoMVP.png"/>
+      <ImageView fitHeight="284.0" fitWidth="216.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.6888427734375">
+         <Image url="@../Images/logoMVP.png" />
       </ImageView>
    </AnchorPane>
 </VBox>

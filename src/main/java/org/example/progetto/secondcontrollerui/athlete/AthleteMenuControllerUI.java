@@ -1,35 +1,23 @@
 package org.example.progetto.secondcontrollerui.athlete;
 
 import org.example.progetto.SingletonSecondView;
+import org.example.progetto.SelectChoice;
 
 import java.io.PrintStream;
-import java.util.Scanner;
 
-public class AthleteMenuControllerUI {
+public class AthleteMenuControllerUI extends SelectChoice {
     public void start() {
         PrintStream printer = SingletonSecondView.getLoginInstance().getPrinterStream();
-
+        printer.println("-----------------------------------------------------------------------");
         printer.println("\n\t---*SELECT ACCOUNT TYPE*---");
 
         printer.println("\n\n1.->HOME ACCOUNT");
         printer.println("2.->BOOK");
         printer.println("3.->STATS");
-        printer.println("4.->LOGOUT");
+        printer.println("4.->YOUR RESERVATION");
+        printer.println("5.->LOGOUT");
 
-        int choice=-1;
-        Scanner input = new Scanner(System.in);
-        printer.println("Please, make a choice(enter a number between 1 and 4): ");
-        while (choice < 1 || choice > 4) {
-            if (input.hasNextInt()) {
-                choice = input.nextInt();
-                if (choice < 1 || choice > 4) {
-                    printer.println("Not valid choice!");
-                }
-            } else {
-                printer.println("Invalid input! Please enter a number between 1 and 4.");
-                input.next(); // discard the invalid input
-            }
-        }
+        int choice= makeChoice(1,5,printer);
 
         switch (choice){
             case 1:
@@ -42,6 +30,9 @@ public class AthleteMenuControllerUI {
                 SingletonSecondView.getLoginInstance().getViewFactory().showAthleteStats();
                 break;
             case 4:
+                SingletonSecondView.getLoginInstance().getViewFactory().showAthleteBookManage();
+                break;
+            case 5:
                 SingletonSecondView.getLoginInstance().getViewFactory().logout();
                 break;
             default:

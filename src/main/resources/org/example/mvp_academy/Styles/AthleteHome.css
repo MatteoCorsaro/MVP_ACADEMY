@@ -37,7 +37,7 @@
     -fx-border-color: #AAAAAA;
 }
 
-.reservation_listview .scoll-bar:vertical{
+.reservation_listview .scroll-bar:vertical{
     -fx-scale-x: 0;
 }
 

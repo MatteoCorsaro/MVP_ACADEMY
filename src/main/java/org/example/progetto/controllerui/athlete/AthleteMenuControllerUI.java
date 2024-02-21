@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import org.example.progetto.view.AthleteMenuOption;
+import org.example.progetto.constant.AthleteMenuOption;
 import org.example.progetto.Singleton;
 
 import java.net.URL;

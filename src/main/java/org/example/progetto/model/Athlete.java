@@ -1,6 +1,6 @@
 package org.example.progetto.model;
 
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 import org.example.progetto.POSITION;
 
 import java.util.Date;

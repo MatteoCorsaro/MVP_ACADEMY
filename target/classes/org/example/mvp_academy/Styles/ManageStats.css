@@ -6,7 +6,7 @@
     -fx-font-family: "Calibi Light";
     -fx-text-fill: #FFFFFF;
 }
-.add_athlete_container Text{
+.add_athlete_container .Text{
      -fx-font-size: 1.2em;
      -fx-fill: #221818;
 }

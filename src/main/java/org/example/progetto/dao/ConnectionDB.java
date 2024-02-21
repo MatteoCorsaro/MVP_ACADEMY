@@ -1,6 +1,7 @@
 package org.example.progetto.dao;
 
 import org.example.progetto.Singleton;
+import org.example.progetto.exception.MyException;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -22,8 +23,7 @@ public class ConnectionDB {
             this.conn = connetc_to_db(connectionUrl, user, pass);
         } catch (IOException e) {
             this.conn=null;
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
     }
 
@@ -39,8 +39,7 @@ public class ConnectionDB {
                 System.out.println("Connection Failed");
             }
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
         return connection;
     }
@@ -57,8 +56,7 @@ public class ConnectionDB {
             statement = this.conn.createStatement();
             resultSet=statement.executeQuery(STR."select * from reservation_table where name= '\{username}';");
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
         return resultSet;
     }
@@ -70,9 +68,11 @@ public class ConnectionDB {
             statement = this.conn.createStatement();
             resultSet=statement.executeQuery(STR."select * from reservation_table where trainer= '\{username}';");
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
         return resultSet;
+    }
+    private static void catchE(Exception e){
+        MyException.getInstance().exceptionDB(e);
     }
 }

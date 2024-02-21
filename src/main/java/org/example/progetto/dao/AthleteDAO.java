@@ -1,6 +1,7 @@
 package org.example.progetto.dao;
 
 import org.example.progetto.bean.AthleteBean;
+import org.example.progetto.exception.MyException;
 import org.example.progetto.model.Athlete;
 import org.example.progetto.POSITION;
 import org.example.progetto.Singleton;
@@ -23,13 +24,12 @@ public class AthleteDAO {
         try {
             return formatter.parse(dateString);
         } catch (ParseException e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
     }
 
-    public static  Athlete getAthleteByUsername(String username) {
+    public static Athlete getAthleteByUsername(String username) {
         Athlete athlete=new Athlete();
         Statement statement;
         ResultSet rs;
@@ -58,8 +58,7 @@ public class AthleteDAO {
             statement.close();
             return athlete;
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
     }
@@ -75,10 +74,12 @@ public class AthleteDAO {
         try {
             return conn.createStatement();
         } catch (Exception e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
     }
 
+    private static void catchE(Exception e){
+        MyException.getInstance().exceptionDB(e);
+    }
 }

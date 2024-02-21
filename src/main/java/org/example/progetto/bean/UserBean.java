@@ -2,7 +2,7 @@ package org.example.progetto.bean;
 
 
 import org.example.progetto.dao.AthleteDAO;
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 
 public class UserBean {
     private final String username;

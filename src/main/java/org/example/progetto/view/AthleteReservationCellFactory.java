@@ -5,6 +5,7 @@ import javafx.scene.control.ListCell;
 import org.example.progetto.Singleton;
 import org.example.progetto.bean.ReservationBean;
 import org.example.progetto.controllerui.athlete.AthleteReservationCellControllerUI;
+import org.example.progetto.exception.MyException;
 
 public class AthleteReservationCellFactory extends ListCell<ReservationBean>{
     @Override
@@ -21,8 +22,8 @@ public class AthleteReservationCellFactory extends ListCell<ReservationBean>{
             try {
                 setGraphic(loader.load());
             } catch (Exception e) {
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+                MyException ex = new MyException();
+                ex.exceptionDB(e);
             }
         }
     }

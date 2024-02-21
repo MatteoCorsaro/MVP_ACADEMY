@@ -8,9 +8,9 @@ import org.example.progetto.Singleton;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static org.example.progetto.view.TrainerMenuOption.STATS;
-import static org.example.progetto.view.TrainerMenuOption.BOOK;
-import static org.example.progetto.view.TrainerMenuOption.ADD;
+import static org.example.progetto.constant.TrainerMenuOption.STATS;
+import static org.example.progetto.constant.TrainerMenuOption.BOOK;
+import static org.example.progetto.constant.TrainerMenuOption.ADD;
 
 public class TrainerControllerUI implements Initializable {
     @FXML

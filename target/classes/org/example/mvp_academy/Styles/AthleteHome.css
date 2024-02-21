@@ -27,7 +27,7 @@
     -fx-spacing: 15;
 }
 
-.home Text{
+.home .Text{
     -fx-fill: #221818;
 }
 
@@ -37,7 +37,7 @@
     -fx-border-color: #AAAAAA;
 }
 
-.reservation_listview .scoll-bar:vertical{
+.reservation_listview .scroll-bar:vertical{
     -fx-scale-x: 0;
 }
 

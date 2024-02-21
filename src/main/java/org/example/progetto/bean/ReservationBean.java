@@ -13,8 +13,8 @@ public class ReservationBean {
 
     private final Reservation reservation;
 
-    public ReservationBean(String date, String trainer, String hour) {
-        this.reservation=new Reservation(Singleton.getLoginInstance().getUser().getUsername(), trainer, date, hour);
+    public ReservationBean(String date, String trainer, String hour,String user) {
+        this.reservation=new Reservation(user, trainer, date, hour);
         if(isActive(date)==-1){
             this.reservation.setState(RESERVATION_STATE.PASSATA.toString());
         }

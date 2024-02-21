@@ -1,6 +1,7 @@
 package org.example.progetto.dao;
 
 import org.example.progetto.bean.StatsBean;
+import org.example.progetto.exception.MyException;
 import org.example.progetto.model.Stat;
 import org.example.progetto.model.Stats;
 import org.example.progetto.POS;
@@ -26,7 +27,8 @@ public class StatsDAO{
             bufferedReader.close();
             return jsonText.toString();
         }catch(Exception e){
-            e.printStackTrace();
+            MyException ex = new MyException();
+            ex.exceptionDB(e);
         }
         return null;
     }

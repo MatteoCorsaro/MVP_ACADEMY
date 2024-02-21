@@ -12,8 +12,8 @@
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="200.0" styleClass="main_menu_container" stylesheets="@../Styles/AthleteMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.progetto.controllerui.trainer.TrainerMenuControllerUI">
     <AnchorPane prefHeight="730.0" prefWidth="180.0" styleClass="left_container">
         <VBox prefHeight="151.0" prefWidth="200.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <FontAwesomeIconView glyphName="USER" size="50" />
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MVP ACADEMY" />
+            <FontAwesomeIconView glyphName="USER" size="50" styleClass="FontAwesomeIconView" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text" text="MVP ACADEMY" />
             <Line endX="130.0" stroke="#f97c08" />
         </VBox>
         <VBox prefHeight="300.0" prefWidth="180.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
