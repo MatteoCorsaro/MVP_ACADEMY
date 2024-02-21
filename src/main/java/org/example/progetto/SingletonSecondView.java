@@ -12,6 +12,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
 public class SingletonSecondView {
 
@@ -96,7 +97,7 @@ public class SingletonSecondView {
         }
     }
 
-    public ArrayList<ReservationBean> getLatestReservation() {
+    public List<ReservationBean> getLatestReservation() {
         return latestReservation;
     }
 
@@ -107,7 +108,7 @@ public class SingletonSecondView {
         this.latestReservation.remove(reservationBean);
     }
 
-    public ArrayList<ReservationBean> getAllReservation() {
+    public List<ReservationBean> getAllReservation() {
         return allReservation;
     }
 

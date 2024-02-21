@@ -116,17 +116,17 @@ public class SecondViewFactory {
         printer.println("\n2.->LOGOUT");
 
         Scanner input = new Scanner(System.in);
-
-        while (true) {
+        boolean b=true;
+        while (b) {
             printer.println("Please, make a choice(enter a number between 1 and 2): ");
 
             choice = input.nextInt();
             if (choice == 1) {
                 SingletonSecondView.getLoginInstance().getViewFactory().showTrainerMenu();
-                break;
+                b=false;
             } else if (choice == 2) {
                 SingletonSecondView.getLoginInstance().getViewFactory().logout();
-                break;
+                b=false;
             } else {
                 printer.println("Not valid choice!");
             }

@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3672d394-0d40-4381-a55a-4d058e3ddf3b" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/SingletonSecondView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/SingletonSecondView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/controller/athlete/BookControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/controller/athlete/BookControllerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondview/SecondViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondview/SecondViewFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "e22ef993",
+    "git-widget-placeholder": "bce1b422",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Matteo/OneDrive/Desktop/Progetto/5 Code/untitled",
     "project.structure.last.edited": "Libraries",
