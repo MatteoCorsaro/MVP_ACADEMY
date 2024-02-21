@@ -32,7 +32,7 @@ public class MyException {
         if(userInterface.equals("CLI")){
             logger.info("ERRORE: NON PUOI PRENOTARE IN UN GIORNO PASSATO");
         }else{
-            Singleton.getLoginInstance().setErrorMessage("NON PUOI PRENOTARE IN UN GIORNO PASSATO");
+            Singleton.getLoginInstance().setErrorMessage("ERRORE: NON PUOI PRENOTARE IN UN GIORNO PASSATO");
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();
         }
     }
