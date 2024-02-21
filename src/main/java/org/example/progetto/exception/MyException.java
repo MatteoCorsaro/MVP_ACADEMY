@@ -11,6 +11,10 @@ public class MyException {
     private String userInterface;
     Logger logger = Logger.getLogger(getClass().getName());
 
+    public MyException(){
+        this.userInterface="";
+    }
+
     public static synchronized MyException getInstance() {
         if (instance == null) {
             instance = new MyException();

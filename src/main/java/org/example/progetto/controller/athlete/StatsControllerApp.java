@@ -5,8 +5,8 @@ import org.example.progetto.bean.UserBean;
 import org.example.progetto.dao.StatsDAO;
 
 public class StatsControllerApp {
-    public StatsBean retStatsBean(UserBean userBean) throws Exception {
+    public StatsBean retStatsBean(UserBean userBean){
         String user=userBean.getUsername();
-        return StatsDAO.ret_bean(user);
+        return StatsDAO.retBean(user);
     }
 }
