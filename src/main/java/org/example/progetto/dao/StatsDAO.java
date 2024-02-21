@@ -14,14 +14,14 @@ import java.util.List;
 
 public class StatsDAO{
 
-    private static final String three="tree_stats";
-    private static final String mid="mid_stats";
+    private static final String TREE_STATS ="tree_stats";
+    private static final String MID_STATS ="mid_stats";
 
-    private static final String rc="right_corner";
-    private static final String rw="right_wing";
-    private static final String key="top_of_the_key";
-    private static final String lw="left_wing";
-    private static final String lc="left_corner";
+    private static final String RIGHT_CORNER ="right_corner";
+    private static final String RIGHT_WING ="right_wing";
+    private static final String TOP_OF_THE_KEY ="top_of_the_key";
+    private static final String LEFT_WING ="left_wing";
+    private static final String LEFT_CORNER ="left_corner";
 
     private StatsDAO() {
         throw new IllegalStateException("Utility class");
@@ -78,27 +78,27 @@ public class StatsDAO{
         List<String> allDate = reservationDao.getAllPastDate(username);
         List<Stat> statList= new ArrayList<>();
         for(String date : allDate){
-            Stat statRcMd = retStat(strJson,username,mid,rc,date);
+            Stat statRcMd = retStat(strJson,username, MID_STATS, RIGHT_CORNER,date);
             statList.add(statRcMd);
 
-            Stat statRwMd = retStat(strJson,username,mid,rw,date);
+            Stat statRwMd = retStat(strJson,username, MID_STATS, RIGHT_WING,date);
             statList.add(statRwMd);
-            Stat statKeyM = retStat(strJson,username,mid,key,date);
+            Stat statKeyM = retStat(strJson,username, MID_STATS, TOP_OF_THE_KEY,date);
             statList.add(statKeyM);
-            Stat statLwMd = retStat(strJson,username,mid,lw,date);
+            Stat statLwMd = retStat(strJson,username, MID_STATS, LEFT_WING,date);
             statList.add(statLwMd);
-            Stat statLcMd = retStat(strJson,username,mid,lc,date);
+            Stat statLcMd = retStat(strJson,username, MID_STATS, LEFT_CORNER,date);
             statList.add(statLcMd);
 
-            Stat statRcT = retStat(strJson,username,three,rc,date);
+            Stat statRcT = retStat(strJson,username, TREE_STATS, RIGHT_CORNER,date);
             statList.add(statRcT);
-            Stat statRwT = retStat(strJson,username,three,rw,date);
+            Stat statRwT = retStat(strJson,username, TREE_STATS, RIGHT_WING,date);
             statList.add(statRwT);
-            Stat statKeyT = retStat(strJson,username,three,key,date);
+            Stat statKeyT = retStat(strJson,username, TREE_STATS, TOP_OF_THE_KEY,date);
             statList.add(statKeyT);
-            Stat statLwT = retStat(strJson,username,three,lw,date);
+            Stat statLwT = retStat(strJson,username, TREE_STATS, LEFT_WING,date);
             statList.add(statLwT);
-            Stat statLcT = retStat(strJson,username,three,lc,date);
+            Stat statLcT = retStat(strJson,username, TREE_STATS, LEFT_CORNER,date);
             statList.add(statLcT);
         }
         return new Stats(statList);
@@ -107,25 +107,25 @@ public class StatsDAO{
     public static Stat retStat(String json, String user, String range, String pos, String date) {
         POS position;
         switch (range) {
-            case mid -> {
+            case MID_STATS -> {
                 switch (pos) {
-                    case rc -> position = POS.MID_CORNER_RIGHT;
-                    case rw -> position = POS.MID_WING_RIGHT;
-                    case key -> position = POS.MID_TOP_OF_THE_KEY;
-                    case lw -> position = POS.MID_WING_LEFT;
-                    case lc -> position = POS.MID_CORNER_LEFT;
+                    case RIGHT_CORNER -> position = POS.MID_CORNER_RIGHT;
+                    case RIGHT_WING -> position = POS.MID_WING_RIGHT;
+                    case TOP_OF_THE_KEY -> position = POS.MID_TOP_OF_THE_KEY;
+                    case LEFT_WING -> position = POS.MID_WING_LEFT;
+                    case LEFT_CORNER -> position = POS.MID_CORNER_LEFT;
                     case null, default -> {
                         return null;
                     }
                 }
             }
-            case three -> {
+            case TREE_STATS -> {
                 switch (pos) {
-                    case rc -> position = POS.THREE_CORNER_RIGHT;
-                    case rw -> position = POS.THREE_WING_RIGHT;
-                    case key -> position = POS.THREE_TOP_OF_THE_KEY;
-                    case lw -> position = POS.THREE_WING_LEFT;
-                    case lc -> position = POS.THREE_CORNER_LEFT;
+                    case RIGHT_CORNER -> position = POS.THREE_CORNER_RIGHT;
+                    case RIGHT_WING -> position = POS.THREE_WING_RIGHT;
+                    case TOP_OF_THE_KEY -> position = POS.THREE_TOP_OF_THE_KEY;
+                    case LEFT_WING -> position = POS.THREE_WING_LEFT;
+                    case LEFT_CORNER -> position = POS.THREE_CORNER_LEFT;
                     case null, default -> {
                         return null;
                     }
