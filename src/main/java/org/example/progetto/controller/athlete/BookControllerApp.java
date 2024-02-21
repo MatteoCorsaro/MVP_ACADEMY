@@ -8,8 +8,7 @@ import org.example.progetto.model.Reservation;
 public class BookControllerApp {
 
     public ReservationBean getThisReservation(String trainer, String date, String hour, String user) {
-        ReservationBean bean = new ReservationBean(date,trainer,hour, user);
-        return bean;
+        return bean = new ReservationBean(date,trainer,hour, user);
     }
 
     public boolean savePrenotation(ReservationBean reservationBean){

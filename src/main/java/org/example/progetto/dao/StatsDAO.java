@@ -14,10 +14,26 @@ import java.util.List;
 
 public class StatsDAO{
 
+    private static final String three="tree_stats";
+    private static final String mid="mid_stats";
+
+    private static final String rc="right_corner";
+    private static final String rw="right_wing";
+    private static final String key="top_of_the_key";
+    private static final String lw="left_wing";
+    private static final String lc="left_corner";
+
+    private StatsDAO() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static String getJSONFromFile(String filename){
         StringBuilder jsonText= new StringBuilder();
         try{
-            BufferedReader bufferedReader= new BufferedReader(new FileReader(filename));
+            BufferedReader bufferedReader= tryBuffer(filename);
+            if(bufferedReader==null){
+                return null;
+            }
 
             String line;
             while((line=bufferedReader.readLine())!=null){
@@ -31,6 +47,15 @@ public class StatsDAO{
             ex.exceptionDB(e);
         }
         return null;
+    }
+    private static BufferedReader tryBuffer(String filename){
+        try{
+            return new BufferedReader(new FileReader(filename));
+        }catch(Exception e) {
+            MyException ex = new MyException();
+            ex.exceptionDB(e);
+            return null;
+        }
     }
 
     public static String getStats(String strJSON, String user, String range,String pos, String date){
@@ -53,57 +78,54 @@ public class StatsDAO{
         List<String> allDate = reservationDao.getAllPastDate(username);
         List<Stat> statList= new ArrayList<>();
         for(String date : allDate){
-            Stat statRcMd = ret_stat(strJson,username,"mid_stats","right_corner",date);
+            Stat statRcMd = retStat(strJson,username,mid,rc,date);
             statList.add(statRcMd);
 
-            Stat statRwMd = ret_stat(strJson,username,"mid_stats","right_wing",date);
+            Stat statRwMd = retStat(strJson,username,mid,rw,date);
             statList.add(statRwMd);
-            Stat statKeyM = ret_stat(strJson,username,"mid_stats","top_of_the_key",date);
+            Stat statKeyM = retStat(strJson,username,mid,key,date);
             statList.add(statKeyM);
-            Stat statLwMd = ret_stat(strJson,username,"mid_stats","left_wing",date);
+            Stat statLwMd = retStat(strJson,username,mid,lw,date);
             statList.add(statLwMd);
-            Stat statLcMd = ret_stat(strJson,username,"mid_stats","left_corner",date);
+            Stat statLcMd = retStat(strJson,username,mid,lc,date);
             statList.add(statLcMd);
 
-            Stat statRcT = ret_stat(strJson,username,"tree_stats","right_corner",date);
+            Stat statRcT = retStat(strJson,username,three,rc,date);
             statList.add(statRcT);
-            Stat statRwT = ret_stat(strJson,username,"tree_stats","right_wing",date);
+            Stat statRwT = retStat(strJson,username,three,rw,date);
             statList.add(statRwT);
-            Stat statKeyT = ret_stat(strJson,username,"tree_stats","top_of_the_key",date);
+            Stat statKeyT = retStat(strJson,username,three,key,date);
             statList.add(statKeyT);
-            Stat statLwT = ret_stat(strJson,username,"tree_stats","left_wing",date);
+            Stat statLwT = retStat(strJson,username,three,lw,date);
             statList.add(statLwT);
-            Stat statLcT = ret_stat(strJson,username,"tree_stats","left_corner",date);
+            Stat statLcT = retStat(strJson,username,three,lc,date);
             statList.add(statLcT);
-
-            //Stat statFT = ret_stat(strJson,username,"free_throw",null,date);
-            //statList.add(statFT);
         }
         return new Stats(statList);
     }
 
-    public static Stat ret_stat(String json, String user, String range, String pos, String date) {
+    public static Stat retStat(String json, String user, String range, String pos, String date) {
         POS position;
         switch (range) {
-            case "mid_stats" -> {
+            case mid -> {
                 switch (pos) {
-                    case "right_corner" -> position = POS.MID_CORNER_RIGHT;
-                    case "right_wing" -> position = POS.MID_WING_RIGHT;
-                    case "top_of_the_key" -> position = POS.MID_TOP_OF_THE_KEY;
-                    case "left_wing" -> position = POS.MID_WING_LEFT;
-                    case "left_corner" -> position = POS.MID_CORNER_LEFT;
+                    case rc -> position = POS.MID_CORNER_RIGHT;
+                    case rw -> position = POS.MID_WING_RIGHT;
+                    case key -> position = POS.MID_TOP_OF_THE_KEY;
+                    case lw -> position = POS.MID_WING_LEFT;
+                    case lc -> position = POS.MID_CORNER_LEFT;
                     case null, default -> {
                         return null;
                     }
                 }
             }
-            case "tree_stats" -> {
+            case three -> {
                 switch (pos) {
-                    case "right_corner" -> position = POS.THREE_CORNER_RIGHT;
-                    case "right_wing" -> position = POS.THREE_WING_RIGHT;
-                    case "top_of_the_key" -> position = POS.THREE_TOP_OF_THE_KEY;
-                    case "left_wing" -> position = POS.THREE_WING_LEFT;
-                    case "left_corner" -> position = POS.THREE_CORNER_LEFT;
+                    case rc -> position = POS.THREE_CORNER_RIGHT;
+                    case rw -> position = POS.THREE_WING_RIGHT;
+                    case key -> position = POS.THREE_TOP_OF_THE_KEY;
+                    case lw -> position = POS.THREE_WING_LEFT;
+                    case lc -> position = POS.THREE_CORNER_LEFT;
                     case null, default -> {
                         return null;
                     }
@@ -114,12 +136,12 @@ public class StatsDAO{
                 return null;
             }
         }
-        String StatSTR=getStats(json,user,range,pos,date);
-        String[] parts = StatSTR.split("/");
+        String statSTR=getStats(json,user,range,pos,date);
+        String[] parts = statSTR.split("/");
         return new Stat(position,Integer.parseInt(parts[0]),Integer.parseInt(parts[1]));
     }
 
-    public static StatsBean ret_bean(String user){
+    public static StatsBean retBean(String user){
         Stats stats = getStatsByUsername(user);
         return new StatsBean(stats);
     }
