@@ -22,11 +22,11 @@
     -fx-cursor: hand
 }
 
-.cell_container HBox{
+.cell_container .HBox{
     -fx-spacing: 25;
     -fx-alignment: Center_left;
 }
-.cell_container HBox Label{
+.cell_container .HBox Label{
     -fx-font-family: "Calibi Light";
     -fx-fill: #221818;
     -fx-font-size: 1.6em;

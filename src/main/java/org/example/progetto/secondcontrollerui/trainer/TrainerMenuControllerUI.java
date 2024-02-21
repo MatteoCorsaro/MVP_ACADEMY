@@ -1,11 +1,11 @@
 package org.example.progetto.secondcontrollerui.trainer;
 
 import org.example.progetto.SingletonSecondView;
+import org.example.progetto.SelectChoice;
 
 import java.io.PrintStream;
-import java.util.Scanner;
 
-public class TrainerMenuControllerUI {
+public class TrainerMenuControllerUI extends SelectChoice {
     public void start() {
         PrintStream printer = SingletonSecondView.getLoginInstance().getPrinterStream();
 
@@ -17,20 +17,7 @@ public class TrainerMenuControllerUI {
         printer.println("4.->ADD PLAYER");
         printer.println("5.->LOGOUT");
 
-        int choice=-1;
-        Scanner input = new Scanner(System.in);
-        printer.println("Please, make a choice(enter a number between 1 and 5): ");
-        while (choice < 1 || choice > 5) {
-            if (input.hasNextInt()) {
-                choice = input.nextInt();
-                if (choice < 1 || choice > 5) {
-                    printer.println("Not valid choice!");
-                }
-            } else {
-                printer.println("Invalid input! Please enter a number between 1 and 5.");
-                input.next(); // discard the invalid input
-            }
-        }
+        int choice=makeChoice(1,5,printer);
 
         switch (choice){
             case 1:

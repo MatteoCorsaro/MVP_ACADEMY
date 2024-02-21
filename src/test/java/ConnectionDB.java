@@ -1,4 +1,3 @@
-import org.example.progetto.exceptions.ExceptionDB;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -29,7 +28,7 @@ public class ConnectionDB {
             statement.executeUpdate(query);
             System.out.println("Table Created");
         }catch (Exception e){
-            ExceptionDB ex=  new ExceptionDB(e.getMessage());
+            System.out.println(e);
         }
     }
 
@@ -42,7 +41,7 @@ public class ConnectionDB {
             statement.executeUpdate(query);
             System.out.println("Row corretly Inserted");
         }catch (Exception e){
-            ExceptionDB ex=  new ExceptionDB(e.getMessage());
+            System.out.println(e);
         }
     }
 

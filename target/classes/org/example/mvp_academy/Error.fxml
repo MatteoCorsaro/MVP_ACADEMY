@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="223.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mvp_academy.controllerUI.ErrorUI">
+<AnchorPane prefHeight="223.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.progetto.controllerui.ErrorUI">
     <Label fx:id="errorLbl" layoutX="14.0" layoutY="35.0" prefHeight="143.0" prefWidth="336.0" text="Label" wrapText="true">
         <font>
           <Font size="15.0" />

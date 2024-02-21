@@ -3,7 +3,7 @@ package org.example.progetto.secondcontrollerui;
 import org.example.progetto.SingletonSecondView;
 import org.example.progetto.bean.UserBean;
 import org.example.progetto.controller.LoginController;
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -76,6 +76,7 @@ public class LoginControllerUI {
 
             setAccType(cred);
             if (checkLog(cred)) {
+                SingletonSecondView.getLoginInstance().setUser(cred);
                 b=false;
             }else{
                 printer.println("INCORRECT CREDENTIALS.");

@@ -43,7 +43,7 @@ public class StatsBean {
             make+=stat.getShootMake();
             take+=stat.getShootTake();
         }
-        float Averange=((float) make /take)*100;
-        return new DecimalFormat("#.00").format (Averange);
+        float averange=((float) make /take)*100;
+        return new DecimalFormat("#.00").format (averange);
     }
 }

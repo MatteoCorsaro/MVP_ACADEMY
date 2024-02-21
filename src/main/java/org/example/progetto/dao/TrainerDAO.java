@@ -1,7 +1,7 @@
 package org.example.progetto.dao;
 
-import org.example.progetto.RESERVATION_STATE;
 import org.example.progetto.Singleton;
+import org.example.progetto.exception.MyException;
 import org.example.progetto.model.Trainer;
 
 import java.sql.Connection;
@@ -17,7 +17,6 @@ public class TrainerDAO {
         try{
             String trainerTable="Trainer_table";
             String query=String.format("select * from %s where Username= '%s'",trainerTable,username);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
 
             statement = retStatement();
             if (statement==null){
@@ -32,8 +31,7 @@ public class TrainerDAO {
             statement.close();
             return trainer;
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
     }
@@ -42,9 +40,11 @@ public class TrainerDAO {
         try {
             return conn.createStatement();
         } catch (Exception e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
+    }
+    private static void catchE(Exception e){
+        MyException.getInstance().exceptionDB(e);
     }
 }

@@ -4,7 +4,7 @@ package org.example.progetto.controller;
 import org.example.progetto.bean.UserBean;
 import org.example.progetto.dao.LoginDao;
 import org.example.progetto.model.User;
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 
 /**
  * Si occupa della gestione del login e della registrazione.

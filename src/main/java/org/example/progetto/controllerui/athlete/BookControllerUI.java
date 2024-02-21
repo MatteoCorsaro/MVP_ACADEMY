@@ -7,7 +7,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
+import org.example.progetto.SingletonSecondView;
 import org.example.progetto.bean.ReservationBean;
+import org.example.progetto.exception.MyException;
 import org.example.progetto.view.AthleteReservationCellFactory;
 import org.example.progetto.controller.athlete.BookControllerApp;
 import org.example.progetto.HOUR;
@@ -55,8 +57,7 @@ public class BookControllerUI implements Initializable {
                 try {
                     onReservation();
                 } catch (Exception e) {
-                    Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                    Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+                    Singleton.getLoginInstance().getMyException().exceptionDB(e);
                 }
             });
         }
@@ -65,13 +66,12 @@ public class BookControllerUI implements Initializable {
 
     private void onReservation(){
         BookControllerApp controllerApp = new BookControllerApp();
-        ReservationBean reservationBean = controllerApp.getThisReservation(trainer,date,hour);
+        ReservationBean reservationBean = controllerApp.getThisReservation(trainer,date,hour, Singleton.getLoginInstance().getUser().getUsername());
         if(controllerApp.savePrenotation(reservationBean)) {
             Singleton.getLoginInstance().addReservation(reservationBean);
             updateListView();
         }
     }
-
     private void updateListView() {
         listBook.setItems(Singleton.getLoginInstance().getLatestReservation());
         listBook.setCellFactory(e->new AthleteReservationCellFactory());

@@ -1,6 +1,6 @@
 package org.example.progetto.model;
 
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 
 public class Trainer extends User{
     private String name;

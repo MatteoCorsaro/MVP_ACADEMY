@@ -5,6 +5,7 @@ import javafx.scene.control.ListCell;
 import org.example.progetto.Singleton;
 import org.example.progetto.bean.AthleteBean;
 import org.example.progetto.controllerui.trainer.AthleteCellControllerUI;
+import org.example.progetto.exception.MyException;
 
 public class AthleteCellFactory extends ListCell<AthleteBean> {
     @Override
@@ -21,8 +22,8 @@ public class AthleteCellFactory extends ListCell<AthleteBean> {
             try{
                 setGraphic(loader.load());
             }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+                MyException ex = new MyException();
+                ex.exceptionDB(e);
             }
         }
     }

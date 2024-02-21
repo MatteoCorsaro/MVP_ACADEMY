@@ -1,5 +1,6 @@
 package org.example.progetto.dao;
 
+import org.example.progetto.exception.MyException;
 import org.example.progetto.model.Reservation;
 import org.example.progetto.HOUR;
 import org.example.progetto.RESERVATION_STATE;
@@ -27,11 +28,11 @@ public class ReservationDao {
             if (statement==null){
                 return;
             }
+            System.out.println("ROW INSERTER");
             statement.executeUpdate(query);
             statement.close();
         }catch (SQLException e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
     }
 
@@ -61,8 +62,7 @@ public class ReservationDao {
             statement.close();
             return reservation;
         }catch (SQLException e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
     }
@@ -78,8 +78,7 @@ public class ReservationDao {
             statement.executeUpdate(query);
             statement.close();
         }catch (SQLException e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
     }
 
@@ -101,8 +100,7 @@ public class ReservationDao {
             statement.close();
             return allDate;
         }catch (SQLException e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return Collections.emptyList();
         }
     }
@@ -118,8 +116,7 @@ public class ReservationDao {
             statement.executeUpdate(query);
             statement.close();
         }catch (SQLException e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
     }
 
@@ -140,8 +137,7 @@ public class ReservationDao {
             statement.close();
             return state;
         }catch (SQLException e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
         }
         return RESERVATION_STATE.NON_ACCETTATA.toString();
     }
@@ -165,8 +161,7 @@ public class ReservationDao {
             statement.close();
             return true;
         }catch (SQLException e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return true;
         }
     }
@@ -187,8 +182,7 @@ public class ReservationDao {
             statement.close();
             return name;
         }catch (SQLException e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return "";
         }
     }
@@ -197,9 +191,11 @@ public class ReservationDao {
         try {
             return conn.createStatement();
         } catch (Exception e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
+    }
+    private static void catchE(Exception e){
+        MyException.getInstance().exceptionDB(e);
     }
 }

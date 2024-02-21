@@ -9,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.example.progetto.bean.UserBean;
-import org.example.progetto.view.AccountType;
+import org.example.progetto.constant.AccountType;
 import org.example.progetto.controller.LoginController;
 import org.example.progetto.Singleton;
 

@@ -1,5 +1,6 @@
 package org.example.progetto.dao;
 
+import org.example.progetto.exception.MyException;
 import org.example.progetto.model.User;
 import org.example.progetto.Singleton;
 
@@ -27,8 +28,7 @@ public class LoginDao {
             }
             statement.close();
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return false;
         }
         return false;
@@ -53,8 +53,7 @@ public class LoginDao {
             }
             statement.close();
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return false;
         }
         return false;
@@ -65,9 +64,11 @@ public class LoginDao {
         try {
             return conn.createStatement();
         } catch (Exception e) {
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            catchE(e);
             return null;
         }
+    }
+    private static void catchE(Exception e){
+        MyException.getInstance().exceptionDB(e);
     }
 }

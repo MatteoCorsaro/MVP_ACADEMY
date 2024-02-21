@@ -6,6 +6,7 @@ import org.example.progetto.bean.ReservationBean;
 import org.example.progetto.controllerui.trainer.TrainerReservationAccCellControllUI;
 import org.example.progetto.controllerui.trainer.TrainerReservationCellControllerUI;
 import org.example.progetto.Singleton;
+import org.example.progetto.exception.MyException;
 
 public class TrainerReservationCellFactory extends ListCell<ReservationBean>{
     @Override
@@ -37,8 +38,8 @@ public class TrainerReservationCellFactory extends ListCell<ReservationBean>{
                     setGraphic(loader.load());
                 }
             } catch (Exception e) {
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+                MyException ex = new MyException();
+                ex.exceptionDB(e);
             }
         }
     }

@@ -5,14 +5,17 @@ import javafx.collections.ObservableList;
 import org.example.progetto.bean.ReservationBean;
 import org.example.progetto.bean.UserBean;
 import org.example.progetto.dao.ConnectionDB;
+import org.example.progetto.exception.MyException;
 import org.example.progetto.view.ViewFactory;
 import java.sql.ResultSet;
 
 public class Singleton {
+
     private static Singleton singleton;
     private final ViewFactory viewFactory;
 
     private final ConnectionDB daoFactory;
+    private final MyException myException;
 
     private final ObservableList<ReservationBean> latestReservation;
     private final ObservableList<ReservationBean> allReservation;
@@ -22,7 +25,8 @@ public class Singleton {
 
     public Singleton() {
         this.viewFactory = new ViewFactory();
-        this.daoFactory = new ConnectionDB();
+        this.daoFactory = new ConnectionDB();this.myException=new MyException();
+        this.myException.setUserInterface("GUI");
 
         this.allReservation = FXCollections.observableArrayList();
         this.latestReservation = FXCollections.observableArrayList();
@@ -41,6 +45,9 @@ public class Singleton {
     public ConnectionDB getDaoFactory() {
         return daoFactory;
     }
+    public MyException getMyException(){
+        return myException;
+    }
     public UserBean getUser(){return user;}
     public void setUser(UserBean user) {
         this.user = user;
@@ -53,11 +60,11 @@ public class Singleton {
                 String trainer = rs.getString("trainer");
                 String date= rs.getString("data");
                 String hour = rs.getString("hour");
-                this.latestReservation.add(new ReservationBean(date, trainer, hour));
+                this.latestReservation.add(new ReservationBean(date, trainer, hour,Singleton.getLoginInstance().getUser().getUsername()));
             }
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            MyException ex = new MyException();
+            ex.exceptionDB(e);
         }
     }
 
@@ -83,11 +90,11 @@ public class Singleton {
                 String athlete = rs.getString("name");
                 String date= rs.getString("data");
                 String hour = rs.getString("hour");
-                this.allReservation.add(new ReservationBean(date, athlete, hour));
+                this.allReservation.add(new ReservationBean(date, athlete, hour,Singleton.getLoginInstance().getUser().getUsername()));
             }
         }catch (Exception e){
-            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            MyException ex = new MyException();
+            ex.exceptionDB(e);
         }
     }
     public void removeReservation2(ReservationBean reservationBean) {

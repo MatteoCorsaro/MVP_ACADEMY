@@ -1,4 +1,4 @@
-module org.example.mvp_academy {
+module org.example.progetto {
     requires javafx.controls;
     requires javafx.fxml;
     requires de.jensd.fx.glyphs.fontawesome;
@@ -18,4 +18,7 @@ module org.example.mvp_academy {
     exports org.example.progetto.controllerui.athlete;
     exports org.example.progetto.model;
     exports org.example.progetto.view;
+    exports org.example.progetto.secondview;
+    opens org.example.progetto.secondview to javafx.fxml;
+    exports org.example.progetto.constant;
 }

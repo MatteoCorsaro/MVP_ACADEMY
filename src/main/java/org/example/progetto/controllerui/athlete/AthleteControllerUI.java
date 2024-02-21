@@ -8,8 +8,8 @@ import org.example.progetto.Singleton;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static org.example.progetto.view.AthleteMenuOption.STATS;
-import static org.example.progetto.view.AthleteMenuOption.BOOK;
+import static org.example.progetto.constant.AthleteMenuOption.STATS;
+import static org.example.progetto.constant.AthleteMenuOption.BOOK;
 
 public class AthleteControllerUI implements Initializable {
     @FXML
