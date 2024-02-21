@@ -36,12 +36,8 @@ public class AthleteDAO {
         try{
             String athleteTable="Athlete_table";
             String query=String.format("select * from %s where Username= '%s'",athleteTable,username);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return null;
             }
             rs=statement.executeQuery(query);
@@ -67,12 +63,22 @@ public class AthleteDAO {
             return null;
         }
     }
-    public static AthleteBean retBean(String username)
-    {
+    public static AthleteBean retBean(String username) {
         Athlete athlete = getAthleteByUsername(username);
-        if(athlete==null){
+        if (athlete == null) {
             return null;
         }
         return new AthleteBean(athlete.getName(), athlete.getSurname(), athlete.getDateOfBirth(), athlete.getTeam(), athlete.getPosition());
     }
+    public static Statement retStatement() {
+        Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
+        try {
+            return conn.createStatement();
+        } catch (Exception e) {
+            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
+            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            return null;
+        }
+    }
+
 }

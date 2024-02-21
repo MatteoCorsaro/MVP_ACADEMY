@@ -5,10 +5,7 @@ import org.example.progetto.HOUR;
 import org.example.progetto.RESERVATION_STATE;
 import org.example.progetto.Singleton;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -22,16 +19,13 @@ public class ReservationDao {
     private static final String STATE = "state";
 
     public void toDb(Reservation reservation){
-        Statement statement = null;
+        Statement statement;
         try{
             String date = reservation.getReservationDate().format(DateTimeFormatter.ofPattern(FORMATT));
             String query=String.format("insert into %s(name,trainer,data,hour,state) values('%s','%s','%s','%s','%s');",TABLE,reservation.getAthlete(),reservation.getTrainer(),date,reservation.getHour().toString(),reservation.getState());
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
+                return;
             }
             statement.executeUpdate(query);
             statement.close();
@@ -42,17 +36,13 @@ public class ReservationDao {
     }
 
     public Reservation fromDb(String name){
-        Statement statement=null;
+        Statement statement;
         ResultSet rs;
         Reservation reservation = new Reservation();
         try{
             String query=String.format("select * from %s where name= '%s'",TABLE,name);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return null;
             }
             rs=statement.executeQuery(query);
@@ -77,16 +67,13 @@ public class ReservationDao {
         }
     }
     public void remove(Reservation reservation){
-        Statement statement=null;
+        Statement statement;
         try{
             String date=reservation.getReservationDate().format(DateTimeFormatter.ofPattern(FORMATT));
             String query=String.format("delete from %s where name= '%s' and data= '%s' and hour= '%s'",TABLE,reservation.getAthlete(),date,reservation.getHour().toString());
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
+                return;
             }
             statement.executeUpdate(query);
             statement.close();
@@ -97,16 +84,12 @@ public class ReservationDao {
     }
 
     public List<String> getAllPastDate(String username){
-        Statement statement=null;
+        Statement statement;
         ResultSet rs;
         try {
             String query = String.format("select * from %s where name= '%s'", TABLE, username);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return Collections.emptyList();
             }
             rs = statement.executeQuery(query);
@@ -125,15 +108,12 @@ public class ReservationDao {
     }
 
     public void update(Reservation reservation,String newName){
-        Statement statement=null;
+        Statement statement;
         try{
-            String query=String.format("update %s set state='%s' where state ='%s' and data='%s' and hour='%s'",TABLE,newName,RESERVATION_STATE.NON_ACCETTATA.toString(),reservation.getReservationDate().format(DateTimeFormatter.ofPattern(FORMATT)), reservation.getHour().toString());
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            String query=String.format("update %s set state='%s' where state ='%s' and data='%s' and hour='%s'",TABLE,newName,"NON ACCETTATA",reservation.getReservationDate().format(DateTimeFormatter.ofPattern(FORMATT)), reservation.getHour().toString());
+            statement = retStatement();
+            if (statement==null){
+                return;
             }
             statement.executeUpdate(query);
             statement.close();
@@ -144,16 +124,12 @@ public class ReservationDao {
     }
 
     public String getState(String format){
-        Statement statement=null;
+        Statement statement;
         ResultSet rs;
         try {
             String query = String.format("select * from %s where data= '%s'", TABLE, format);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return RESERVATION_STATE.NON_ACCETTATA.toString();
             }
             rs = statement.executeQuery(query);
@@ -171,16 +147,12 @@ public class ReservationDao {
     }
 
     public boolean checkReservation(String date, String hour){
-        Statement statement=null;
+        Statement statement;
         ResultSet rs;
         try {
             String query = String.format("select * from %s where data= '%s' and hour='%s'", TABLE, date,hour);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return true;
             }
             rs = statement.executeQuery(query);
@@ -199,16 +171,12 @@ public class ReservationDao {
         }
     }
     public String getName(String format){
-        Statement statement = null;
+        Statement statement;
         ResultSet rs;
         try {
             String query = String.format("select * from %s where data= '%s'", TABLE, format);
-            Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return "";
             }
             rs = statement.executeQuery(query);
@@ -222,6 +190,16 @@ public class ReservationDao {
             Singleton.getLoginInstance().setErrorMessage(e.getMessage());
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();
             return "";
+        }
+    }
+    public static Statement retStatement() {
+        Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
+        try {
+            return conn.createStatement();
+        } catch (Exception e) {
+            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
+            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            return null;
         }
     }
 }

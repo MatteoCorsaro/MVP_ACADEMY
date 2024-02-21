@@ -3,6 +3,7 @@ package org.example.progetto.dao;
 import org.example.progetto.model.User;
 import org.example.progetto.Singleton;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -13,11 +14,8 @@ public class LoginDao {
         try{
             String tableName="Athlete_user";
             String query=String.format("select * from %s where Username= '%s'",tableName,user.getUsername());
-            try {
-                statement = Singleton.getLoginInstance().getDaoFactory().getConnection().createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return false;
             }
             rs=statement.executeQuery(query);
@@ -42,11 +40,8 @@ public class LoginDao {
         try{
             String tableName="Trainer_user";
             String query=String.format("select * from %s where Username= '%s'",tableName,user.getUsername());
-            try {
-                statement = Singleton.getLoginInstance().getDaoFactory().getConnection().createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return false;
             }
             rs=statement.executeQuery(query);
@@ -63,5 +58,16 @@ public class LoginDao {
             return false;
         }
         return false;
+    }
+
+    public static Statement retStatement() {
+        Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
+        try {
+            return conn.createStatement();
+        } catch (Exception e) {
+            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
+            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            return null;
+        }
     }
 }

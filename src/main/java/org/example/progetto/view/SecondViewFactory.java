@@ -1,11 +1,11 @@
 package org.example.progetto.view;
 
-import org.example.progetto.secondControllerUI.LoginControllerUI;
-import org.example.progetto.secondControllerUI.athlete.AthleteAccountControllerUI;
-import org.example.progetto.secondControllerUI.athlete.AthleteBookControllerUI;
-import org.example.progetto.secondControllerUI.athlete.AthleteMenuControllerUI;
-import org.example.progetto.secondControllerUI.athlete.AthleteStatsControllerUI;
-import org.example.progetto.secondControllerUI.trainer.*;
+import org.example.progetto.secondcontrollerui.LoginControllerUI;
+import org.example.progetto.secondcontrollerui.athlete.AthleteAccountControllerUI;
+import org.example.progetto.secondcontrollerui.athlete.AthleteBookControllerUI;
+import org.example.progetto.secondcontrollerui.athlete.AthleteMenuControllerUI;
+import org.example.progetto.secondcontrollerui.athlete.AthleteStatsControllerUI;
+import org.example.progetto.secondcontrollerui.trainer.*;
 
 public class SecondViewFactory {
     private AccountType loginAccountType;

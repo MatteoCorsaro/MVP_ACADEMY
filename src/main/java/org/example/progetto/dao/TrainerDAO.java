@@ -1,5 +1,6 @@
 package org.example.progetto.dao;
 
+import org.example.progetto.RESERVATION_STATE;
 import org.example.progetto.Singleton;
 import org.example.progetto.model.Trainer;
 
@@ -18,11 +19,8 @@ public class TrainerDAO {
             String query=String.format("select * from %s where Username= '%s'",trainerTable,username);
             Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
 
-            try {
-                statement = conn.createStatement();
-            }catch (Exception e){
-                Singleton.getLoginInstance().setErrorMessage(e.getMessage());
-                Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            statement = retStatement();
+            if (statement==null){
                 return null;
             }
             rs=statement.executeQuery(query);
@@ -34,6 +32,16 @@ public class TrainerDAO {
             statement.close();
             return trainer;
         }catch (Exception e){
+            Singleton.getLoginInstance().setErrorMessage(e.getMessage());
+            Singleton.getLoginInstance().getViewFactory().showErrorWindow();
+            return null;
+        }
+    }
+    public static Statement retStatement() {
+        Connection conn = Singleton.getLoginInstance().getDaoFactory().getConnection();
+        try {
+            return conn.createStatement();
+        } catch (Exception e) {
             Singleton.getLoginInstance().setErrorMessage(e.getMessage());
             Singleton.getLoginInstance().getViewFactory().showErrorWindow();
             return null;

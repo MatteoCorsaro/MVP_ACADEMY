@@ -4,7 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.ListCell;
 import org.example.progetto.Singleton;
 import org.example.progetto.bean.AthleteBean;
-import org.example.progetto.controllerUI.trainer.AthleteCellControllerUI;
+import org.example.progetto.controllerui.trainer.AthleteCellControllerUI;
 
 public class AthleteCellFactory extends ListCell<AthleteBean> {
     @Override
