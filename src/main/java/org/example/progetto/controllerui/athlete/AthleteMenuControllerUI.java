@@ -35,8 +35,6 @@ public class AthleteMenuControllerUI implements Initializable {
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         // Close the client window
         Singleton.getLoginInstance().getViewFactory().closeStage(stage);
-        // Show Login Window
-        //Singleton.getLoginInstance().getViewFactory().showLoginWindow();
     }
 
     private void onHome(){
