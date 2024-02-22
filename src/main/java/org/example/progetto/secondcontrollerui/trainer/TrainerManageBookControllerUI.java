@@ -18,12 +18,12 @@ public class TrainerManageBookControllerUI {
 
     private void updateListView() {
 
-        this.listBook.addAll(SingletonSecondView.getLoginInstance().getLatestReservation());
+        this.listBook.addAll(SingletonSecondView.getLoginInstance().getAllReservation());
     }
 
     private void initAllReservationList() {
-        if (SingletonSecondView.getLoginInstance().getLatestReservation().isEmpty()) {
-            SingletonSecondView.getLoginInstance().setLatestReservation();
+        if (SingletonSecondView.getLoginInstance().getAllReservation().isEmpty()) {
+            SingletonSecondView.getLoginInstance().setAllReservation();
         }
     }
 
@@ -37,6 +37,7 @@ public class TrainerManageBookControllerUI {
             printReservation(bean);
         }
 
+        SingletonSecondView.getLoginInstance().getPrinterStream().println("\n-----------------------------------------------------------------------");
         SingletonSecondView.getLoginInstance().getViewFactory().exitAthlete();
     }
 

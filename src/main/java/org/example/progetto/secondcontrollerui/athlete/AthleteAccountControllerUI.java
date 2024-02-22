@@ -32,7 +32,7 @@ public class AthleteAccountControllerUI {
         printer.println(STR."Height: \{EMPTY}");
         printer.println(STR."Weight: \{EMPTY}");
         printer.println(STR."Phone: \{EMPTY}");
-
+        printer.println("\n-----------------------------------------------------------------------");
         SingletonSecondView.getLoginInstance().getViewFactory().exitAthlete();
     }
 }
