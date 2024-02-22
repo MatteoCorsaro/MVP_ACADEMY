@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3672d394-0d40-4381-a55a-4d058e3ddf3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/Singleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/controllerui/athlete/AthleteMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/controllerui/athlete/AthleteMenuControllerUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/controllerui/trainer/TrainerMenuControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/controllerui/trainer/TrainerMenuControllerUI.java" afterDir="false" />
     </list>
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="try" />
+        <entry key="$PROJECT_DIR$" value="rightBranch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "rightBranch",
+    "git-widget-placeholder": "GOOD",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Matteo/OneDrive/Desktop/Progetto/5 Code/untitled",
     "project.structure.last.edited": "Libraries",
