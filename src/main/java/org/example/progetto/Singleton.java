@@ -9,6 +9,7 @@ import org.example.progetto.exception.MyException;
 import org.example.progetto.view.ViewFactory;
 import java.sql.ResultSet;
 
+
 public class Singleton {
 
     private static Singleton singleton;
