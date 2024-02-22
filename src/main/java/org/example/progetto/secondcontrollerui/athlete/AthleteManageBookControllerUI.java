@@ -36,7 +36,7 @@ public class AthleteManageBookControllerUI {
             SingletonSecondView.getLoginInstance().getPrinterStream().println(STR."\{i++}.");
             printReservation(bean);
         }
-
+        SingletonSecondView.getLoginInstance().getPrinterStream().println("\n-----------------------------------------------------------------------");
         SingletonSecondView.getLoginInstance().getViewFactory().exitAthlete();
     }
 

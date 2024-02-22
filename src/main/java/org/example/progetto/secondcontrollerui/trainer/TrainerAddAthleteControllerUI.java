@@ -9,6 +9,8 @@ public class TrainerAddAthleteControllerUI {
         PrintStream printer = SingletonSecondView.getLoginInstance().getPrinterStream();
 
         printer.println("\n\tANCORA DA IMPLEMENTARE");
+
+        printer.println("\n-----------------------------------------------------------------------");
         SingletonSecondView.getLoginInstance().getViewFactory().exitTrainer();
     }
 }

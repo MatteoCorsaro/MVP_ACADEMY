@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3672d394-0d40-4381-a55a-4d058e3ddf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/SingletonSecondView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/SingletonSecondView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/controller/athlete/BookControllerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/controller/athlete/BookControllerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/dao/StatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteAccountControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteAccountControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteBookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteBookControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteManageBookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteManageBookControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteStatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/athlete/AthleteStatsControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerAddAthleteControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerAddAthleteControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerHomeControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerHomeControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerManageBookControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerManageBookControllerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerManageStatsControllerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondcontrollerui/trainer/TrainerManageStatsControllerUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondview/SecondViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/progetto/secondview/SecondViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Booking.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/example/mvp_academy/Athlete/Booking.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="new" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
@@ -70,7 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "bce1b422",
+    "git-widget-placeholder": "try",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Matteo/OneDrive/Desktop/Progetto/5 Code/untitled",
     "project.structure.last.edited": "Libraries",

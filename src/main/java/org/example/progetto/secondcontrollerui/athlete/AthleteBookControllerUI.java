@@ -32,7 +32,7 @@ public class AthleteBookControllerUI extends SelectChoice {
                 Singleton.getLoginInstance().getViewFactory().showErrorWindow();
             }
         }
-
+        printer.println("\n-----------------------------------------------------------------------");
         SingletonSecondView.getLoginInstance().getViewFactory().exitAthlete();
     }
 
